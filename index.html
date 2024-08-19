@@ -92,6 +92,7 @@
               placeholder="Search"
             />
             <button
+              id="search-btn"
               class="btn bg-[#797DFC] text-white rounded-3xl px-5 font-extrabold py-2"
             >
               Search
@@ -132,100 +133,23 @@
           </p>
         </div>
         <div class="flex flex-col lg:flex-row gap-6">
-          <div class="flex-none lg:w-8/12">
+          <div class="flex-none lg:w-8/12" id="show-posts">
             <!-- card 1 -->
-            <div
-              class="card-hover flex flex-col lg:flex-row gap-10 justify-between items-start px-4 py-10 lg:p-10 bg-[#F3F3F5] rounded-3xl"
-            >
-              <div class="w-full lg:w-auto flex justify-center items-center">
-                <div class="indicator w-20 relative">
-                  <span
-                    class="hidden absolute z-10 indicator-end badge bg-red-500 -right-1 -top-1"
-                  ></span>
-                  <span
-                    class="absolute z-10 indicator-end badge bg-green-400 -right-1 -top-1"
-                  ></span>
-                  <img
-                    class="mask mask-squircle z-1"
-                    src="https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp"
-                  />
-                </div>
-              </div>
-              <div>
-                <div
-                  class="flex flex-col lg:flex-row gap-3 lg:gap-0 items-center justify-between mb-5"
-                >
-                  <p class="font-black text-gray-500"># Comedy</p>
-                  <p class="font-black text-gray-500">Author: Imran Khan</p>
-                </div>
-                <h2 class="text-2xl font-bold text-gray-800">
-                  10 Kids Unaware of Their Halloween Costume
-                </h2>
-                <p class="my-4 text-gray-500">
-                  It’s one thing to subject yourself to a Halloween costume
-                  mishap because, hey, that’s your prerogative
-                </p>
-                <div class="border-b-2 border-dashed border-gray-400"></div>
-                <div
-                  class="flex flex-col lg:flex-row items-center justify-between mt-4"
-                >
-                  <div
-                    class="grid grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 mb-7 lg:mb-0"
-                  >
-                    <div class="flex space-x-4 text-sm text-gray-500">
-                      <span class="flex text-lg items-center">
-                        <i class="fa-regular fa-comment-dots me-2"></i>
-                        5 min
-                      </span>
-                    </div>
-                    <div class="flex space-x-4 text-sm text-gray-500">
-                      <span class="flex text-lg items-center">
-                        <i class="fa-regular fa-eye me-2"></i>
-                        5 min
-                      </span>
-                    </div>
-                    <div
-                      class="flex justify-center col-span-2 lg:col-span-1 space-x-4 text-sm text-gray-500"
-                    >
-                      <span class="flex text-lg items-center">
-                        <i class="fa-regular fa-clock me-2"></i>
-                        5 min
-                      </span>
-                    </div>
-                  </div>
 
-                  <button
-                    class="flex justify-end items-center bg-[#10B981] rounded-full p-2 text-white text-lg"
-                  >
-                    <i class="fa-solid fa-envelope-open"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
             <!-- card-1 finish -->
           </div>
 
-          <aside class="flex-grow bg-[#12132D0D] p-6 rounded-3xl space-y-6">
+          <aside
+            id="side-bar"
+            class="flex-grow bg-[#12132D0D] p-6 rounded-3xl space-y-6"
+          >
             <div class="flex items-center justify-between">
               <h2 class="text-xl font-bold">Title</h2>
-              <p class="text-[#12132D99]">Mark as read (<span>0</span>)</p>
+              <p class="text-[#12132D99]">
+                Mark as read (<span id="count">0</span>)
+              </p>
             </div>
             <!-- items -1  -->
-            <div class="">
-              <div
-                class="flex flex-col gap-4 lg:gap-0 lg:flex-row bg-white p-4 rounded-2xl"
-              >
-                <h1 class="font-bold">
-                  10 Kids Unaware of Their Halloween Costume
-                </h1>
-                <div class="flex space-x-4 text-sm text-gray-500 w-36">
-                  <span class="flex text-lg items-center">
-                    <i class="fa-regular fa-eye me-2" aria-hidden="true"></i>
-                    5 min
-                  </span>
-                </div>
-              </div>
-            </div>
           </aside>
         </div>
       </section>
@@ -254,6 +178,7 @@
           </div>
         </div>
       </section>
+
       <!-- latest posts  -->
       <section class="my-32">
         <div class="text-center">
