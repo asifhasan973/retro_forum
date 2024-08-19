@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Forum</title>
+    <!-- daisy ui  -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/0893c69b74.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .mulish {
+        font-family: 'Mulish', sans-serif;
+      }
+      .card-hover:hover {
+        background-color: #797dfc1a;
+        border: 1px solid rgb(121, 125, 252);
+      }
+      .card-hover {
+        border: 1px solid #f3f3f5;
+      }
+    </style>
+  </head>
+  <body class="mulish">
+    <header class="w-10/12 mx-auto">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <!-- <a class="btn btn-ghost text-3xl font-black">ReTro</a> -->
+            <a class="btn btn-ghost"><img src="./images/logo.png" alt="" /></a>
+          </div>
+
+          <div class="navbar-end space-x-7">
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal space-x-6">
+                <button class="btn btn-circle">
+                  <i class="fa-solid fa-house text-[#12132D99]"></i>
+                </button>
+                <button class="btn btn-circle">
+                  <i class="fa-solid fa-pen text-[#12132D99]"></i>
+                </button>
+                <button class="btn btn-circle">
+                  <i class="fa-solid fa-user-plus text-[#12132D99]"></i>
+                </button>
+                <button class="btn btn-circle">
+                  <i class="fa-regular fa-flag text-[#12132D99]"></i>
+                </button>
+              </ul>
+            </div>
+            <a
+              class="btn btn-outline bg-[#797DFC] text-white rounded-3xl px-7 font-extrabold"
+              >Sign In</a
+            >
+          </div>
+        </div>
+      </nav>
+      <div
+        class="mt-10 flex flex-col lg:flex-row justify-between lg:h-[650px] items-center bg-[#12132D] text-white px-4 py-16 lg:p-24 rounded-[32px] bg-[url(./images/bgbanner.png)] bg-no-repeat bg-bottom bg-cover"
+      >
+        <div class="lg:flex-none lg:w-7/12 text-center lg:text-start">
+          <h1 class="text-4xl lg:text-7xl font-black mb-12">
+            Welcome to the <span class="text-[#797DFC]">Retro</span> Forum
+          </h1>
+          <p class="text-xl opacity-80 mb-20">
+            Share your favorite opinion and win and <br />
+            wp forum coffee mug!
+          </p>
+          <label
+            class="flex flex-col sm:flex-row items-center sm:items-start space-y-2 sm:space-y-0 sm:space-x-2 w-full sm:w-auto"
+          >
+            <input
+              type="text"
+              class="lg:w-1/2 input input-bordered py-3 sm:py-5 rounded-full"
+              placeholder="Search"
+            />
+            <button
+              class="btn bg-[#797DFC] text-white rounded-3xl px-5 font-extrabold py-2"
+            >
+              Search
+            </button>
+          </label>
+        </div>
+        <div class="lg:flex-grow mt-20 lg:mt-0">
+          <div class="bg-white rounded-3xl lg:mx-10 p-3 lg:p-12 text-black">
+            <div class="flex justify-between gap-6 lg:gap-0">
+              <h1 class="text-xl lg:text-2xl">Registered Users</h1>
+              <h1 class="text-xl lg:text-2xl">01</h1>
+            </div>
+            <div class="flex justify-between">
+              <h1 class="text-xl lg:text-2xl">Registered Users</h1>
+              <h1 class="text-xl lg:text-2xl">01</h1>
+            </div>
+            <div class="flex justify-between">
+              <h1 class="text-xl lg:text-2xl">Registered Users</h1>
+              <h1 class="text-xl lg:text-2xl">01</h1>
+            </div>
+            <div class="flex justify-between">
+              <h1 class="text-xl lg:text-2xl">Registered Users</h1>
+              <h1 class="text-xl lg:text-2xl">01</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-10/12 mx-auto">
+      <section class="my-32">
+        <div class="text-center">
+          <h1 class="text-5xl font-black my-6">Let’s Discuss</h1>
+          <p class="text-xl opacity-80 mb-20">
+            Yes, you can run unit tests and view the results directly within the
+            app. The <br />
+            integrated testing features allow for a streamlined .
+          </p>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-6">
+          <div class="flex-none lg:w-8/12">
+            <!-- card 1 -->
+            <div
+              class="card-hover flex flex-col lg:flex-row gap-10 justify-between items-start p-4 lg:p-10 bg-[#F3F3F5] rounded-3xl"
+            >
+              <div class="w-full lg:w-auto flex justify-center items-center">
+                <div class="indicator w-20 relative">
+                  <span
+                    class="hidden absolute z-10 indicator-end badge bg-red-500 -right-1 -top-1"
+                  ></span>
+                  <span
+                    class="absolute z-10 indicator-end badge bg-green-400 -right-1 -top-1"
+                  ></span>
+                  <img
+                    class="mask mask-squircle z-1"
+                    src="https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp"
+                  />
+                </div>
+              </div>
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <span class="font-black text-gray-500"># Comedy</span>
+                  <span class="font-black text-gray-500"
+                    >Author: Imran Khan</span
+                  >
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800">
+                  10 Kids Unaware of Their Halloween Costume
+                </h2>
+                <p class="my-4 text-gray-500">
+                  It’s one thing to subject yourself to a Halloween costume
+                  mishap because, hey, that’s your prerogative
+                </p>
+                <div class="border-b-2 border-dashed border-gray-400"></div>
+                <div
+                  class="flex flex-col lg:flex-row items-center justify-between mt-4"
+                >
+                  <div class="grid grid-cols-3 gap-3 lg:gap-10 mb-7 lg:mb-0">
+                    <div class="flex space-x-4 text-sm text-gray-500">
+                      <span class="flex text-lg items-center">
+                        <i class="fa-regular fa-comment-dots me-2"></i>
+                        5 min
+                      </span>
+                    </div>
+                    <div class="flex space-x-4 text-sm text-gray-500">
+                      <span class="flex text-lg items-center">
+                        <i class="fa-regular fa-eye me-2"></i>
+                        5 min
+                      </span>
+                    </div>
+                    <div class="flex space-x-4 text-sm text-gray-500">
+                      <span class="flex text-lg items-center">
+                        <i class="fa-regular fa-clock me-2"></i>
+                        5 min
+                      </span>
+                    </div>
+                  </div>
+
+                  <button
+                    class="flex justify-end items-center bg-[#10B981] rounded-full p-2 text-white text-lg"
+                  >
+                    <i class="fa-solid fa-envelope-open"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- card-1 finish -->
+          </div>
+
+          <aside class="flex-grow bg-[#12132D0D] p-6 rounded-3xl space-y-6">
+            <div class="flex items-center justify-between">
+              <h2 class="text-xl font-bold">Title</h2>
+              <p class="text-[#12132D99]">Mark as read (<span>0</span>)</p>
+            </div>
+            <!-- items -1  -->
+            <div class="">
+              <div class="flex bg-white p-4 rounded-2xl">
+                <h1 class="font-bold">
+                  10 Kids Unaware of Their Halloween Costume
+                </h1>
+                <div class="flex space-x-4 text-sm text-gray-500 w-36">
+                  <span class="flex text-lg items-center">
+                    <i class="fa-regular fa-eye me-2" aria-hidden="true"></i>
+                    5 min
+                  </span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="utilities.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
