@@ -84,15 +84,16 @@
             wp forum coffee mug!
           </p>
           <label
-            class="flex flex-col sm:flex-row items-center sm:items-start space-y-2 sm:space-y-0 sm:space-x-2 w-full sm:w-auto"
+            class="text-gray-500 flex flex-col sm:flex-row items-center sm:items-start space-y-2 sm:space-y-0 sm:space-x-2 w-full sm:w-auto"
           >
             <input
               type="text"
+              id="search-input"
               class="lg:w-1/2 input input-bordered py-3 sm:py-5 rounded-full"
               placeholder="Search"
             />
             <button
-              id="search-btn"
+              onclick="searchButton()"
               class="btn bg-[#797DFC] text-white rounded-3xl px-5 font-extrabold py-2"
             >
               Search

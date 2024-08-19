@@ -7,13 +7,8 @@ const showData = (data) => {
               class="card-hover flex flex-col lg:flex-row gap-10 justify-between items-start px-4 py-10 lg:p-10 bg-[#F3F3F5] rounded-3xl"
             >
               <div class="w-full lg:w-auto flex justify-center items-center">
-                <div class="indicator w-20 relative">
-                  <span
-                    class="hidden absolute z-10 indicator-end badge bg-red-500 -right-1 -top-1"
-                  ></span>
-                  <span
-                    class="absolute z-10 indicator-end badge bg-green-400 -right-1 -top-1"
-                  ></span>
+                <div id="isActiveNow-${post.id}" class="indicator w-20 relative">
+                  
                   <img
                     class="mask mask-squircle z-1"
                     src="${post.image}"
@@ -71,8 +66,9 @@ const showData = (data) => {
               </div>
             </div>
     `;
-    document.getElementById('show-posts').appendChild(newDiv);
 
+    document.getElementById('show-posts').appendChild(newDiv);
+    isActive(post.isActive, post.id);
     newDiv.querySelector('.envelop').addEventListener('click', () => {
       showIndividual(post);
     });
@@ -156,4 +152,19 @@ function showLatestData(posts) {
     `;
     document.getElementById('latest-posts').appendChild(newDiv);
   }
+}
+
+function isActive(prop, id) {
+  let newSpan;
+
+  if (prop === false) {
+    newSpan = document.createElement('span');
+    newSpan.classList =
+      'absolute z-10 indicator-end badge bg-green-500 -right-1 -top-1';
+  } else {
+    newSpan = document.createElement('span');
+    newSpan.classList =
+      'absolute z-10 indicator-end badge bg-red-500 -right-1 -top-1';
+  }
+  document.getElementById(`isActiveNow-${id}`).appendChild(newSpan);
 }
